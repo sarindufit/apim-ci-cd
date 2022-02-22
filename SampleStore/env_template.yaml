@@ -1,21 +1,11 @@
 environments:
-  - name: dev
-    endpoints:
-      production:
-        url: http://dev.wso2.com:9090/samplestore
-        config:
-          retryTimeOut: $RETRY
-      sandbox:
-        url: http://dev.sandbox.wso2.com:9090/samplestore
-        config:
-          retryTimeOut: $RETRY        
-  - name: prod
-    endpoints:
-      production:
-        url: http://prod.wso2.com:9090/samplestore
-        config:
-          retryTimeOut: $RETRY      
-      sandbox:
-        url: http://prod.sandbox.wso2.com:9090/samplestore
-        config:
-          retryTimeOut: $RETRY      
+    - name: dev
+      configs:
+        endpoints:
+            production:
+                url: 'https://dev.wso2.com'
+    - name: prod
+      configs:
+        endpoints:
+            production:
+                url: 'https://prod.wso2.com'                
