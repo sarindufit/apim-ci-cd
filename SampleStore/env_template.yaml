@@ -4,8 +4,12 @@ environments:
         endpoints:
             production:
                 url: 'https://dev.wso2.com'
+                config:
+                     retryTimeOut  : ${RETRY}
     - name: prod
       configs:
         endpoints:
             production:
-                url: 'https://prod.wso2.com'                
+                url: 'https://prod.wso2.com'
+                config:
+                     retryTimeOut  : ${RETRY}                
