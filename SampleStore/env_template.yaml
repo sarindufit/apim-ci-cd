@@ -3,7 +3,7 @@ environments:
       configs:
         endpoints:
             production:
-                url: 'https://dev.wso2.com'
+                url: 'https://development.wso2.com'
                 config:
                      retryTimeOut  : ${RETRY}
     - name: prod
